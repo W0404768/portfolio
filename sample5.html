@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css1">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Project Samples</title>
+</head>
+<body>
+
+
+<header>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class=" nav navbar-nav  navbar-right">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Career Goals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="portfolio.html">Project Samples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2>Maryam Bozorgi</h2>
+</header>
+
+
+<!--<div class="container">-->
+    <div class="contrast">
+        <h1 >Search on Map App</h1>
+        
+    </div>
+<!--</div>-->
+
+
+<main  class="normal " >
+<h3>Overview</h4>
+    <li>This app provides an address search for user on map. User can search the desired address by provided input fields and choose a label for it, then the app returns the postal code related to the address and will bookmark the address on map. 
+
+    </li>
+    <li>Additionally the user has the option choose the address as favourite one, so the app will remember it and stores it in local storage. A button is provided if the user wants to clear the history which clears out the local storage. 
+
+
+    
+    <li>Results are displayed in a stateful and informative manner with paging control.</li> 
+
+    <h3>Analysis</h4>
+        <li>This app uses the API from http://geocoder.ca for retrieving postal code from address.
+
+        </li>
+        <li>Additionally it uses following libraries to show the map and bookmarks. 
+          <a href="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js     
+          http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></a> 
+        </li>
+        <li>Validation is done for input values for example only one checkbox is checked for being favourite address. 
+        </li>
+        <li>Clean coding was practiced in this work sample. All coding related to search address was defined in a class named myLib and an object of it was instantiated in the main scripts file and the provided functions in that class were called to do the needed functionality. 
+        </li>
+        <li>Local storage was used to keep the history data related to favorite places. 
+        </li>
+        <li>XMLHttpRequest is used to get data from API by providing address as follow
+                    <a href="http://geocoder.ca/?stno="+stnum+"&addresst="+address+"&city="+city+"&prov="+prov+"&geoit=xml&topmatches=5"></a>
+        </li>
+        <li>The return value from api would be postal code and latt and longt which are used for map marker. 
+        </li> 
+
+        
+
+</main>
+
+
+
+<div class="black">
+
+
+        <h3>Safety Recall App</h3>
+    <img src="./images/ereader1.png" alt="">
+    <img src="./images/ereader2.png" alt="">
+    
+
+
+
+
+
+    <h3>Do you want check the code for this project?</p>
+    <button  class="btn btn-large ">Visit Github</button>
+    <br>
+    <br>
+
+    <a href="sample3.html">Previous Project Sample</a>
+    <a href="sample5.html">Next Project Sample</a>
+    
+
+</div>
+
+
+
+
+<footer class="container-fluid pt-5">
+        
+        <h6 class="text--orange text--thin text-center py-2">&copy; Designed by Maryam Bozorgi - 2018</h6>
+    
+    </footer>
+    
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

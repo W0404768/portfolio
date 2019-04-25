@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css1">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Project Samples</title>
+</head>
+<body>
+
+
+<header>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class=" nav navbar-nav  navbar-right">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Career Goals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="portfolio.html">Project Samples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2>Maryam Bozorgi</h2>
+</header>
+
+
+<!--<div class="container">-->
+    <div class="contrast">
+        <h1 >Zap-A-Zombie</h1>
+        <p>This Game implemented in JavaScript</p>
+    </div>
+<!--</div>-->
+
+<!--<div class="normal">-->
+
+
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="span12">-->
+
+
+
+
+
+
+                <!--&lt;!&ndash;<div  class="btn-group" >&ndash;&gt;-->
+                <!--<div>-->
+                    <!--<a id="all" href="#" class="btn btn-large">All</a>-->
+                    <!--<a id="javascript" href="#" class="btn btn-large ">Javascript</a>-->
+                    <!--<a id="php" href="#" class="btn btn-large ">PHP</a>-->
+                    <!--<a id="nodejs" href="#" class="btn btn-large ">NodeJS</a>-->
+                    <!--<a id="react" href="#" class="btn btn-large ">React</a>-->
+                    <!--<a id="restful" href="#" class="btn btn-large ">RestFULL API</a>-->
+                <!--</div>-->
+
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<main  class="normal " >
+<h3>Overview</h4>
+    <li>This app provides a game which gives the player the choice to select the board dimension by inputting the numbers of rows and columns.</li>
+    <li>There is a timer which count down and the player can keep playing until timer reaches zero. </li> 
+    <li>Start button would be disabled during play to avoid any interruption until time is over. 
+    </li>
+    <li>The user can start game by clicking the start button and try zap a zombie which appears randomly in one of cells.  
+    </li>
+    <li>If player can catch the zombie by clicking on the cell which zombie is showing up, player can collect one score otherwise the zombie will disappear and will show up in another random cell until time is over. 
+    </li>
+    <li>Validation is implemented which let player choose game board only between 1 and 10 for rows and cells. 
+    </li>
+    <h3>Analysis</h3>
+    <li>Dynamic creating game board was done by using createElement and appendChild functionalities of JavaScript based on input values for rows and cells by player. 
+    </li>
+    <li>setInterval function was used for game timing. 
+    </li>
+    <li>User input validation was done like limiting number of game board and disabling start button during play.
+    </li>
+    <li>The click event of board game cells was used to implement the game if zombie is clicked to collect score or not. 
+    </li>
+    <li>It was tricky that how we can track clicking event if player clicked the zombie, which the click event placed inside showZombie() function when the random number is selected for putting zombie on board the click event also is defined for the same index number, so if there is any click by player we can catch it by that event listener.  
+    </li>
+    <li>The random function was used to randomly appearing the zombie. 
+    </li>
+    <li>The background image was used to decorate the game board and showing zombie. It was a little challenging to put both photos at the same time as background image when zombie shows up but the result is satisfying as it shows the zombie behind the door decoration. 
+    </li>
+
+
+
+
+
+
+</main>
+
+
+<div class="black">
+
+        <h3>Zap-A-Zombie</h3>
+    <img src="./images/zap1.png" alt="">
+    <img src="./images/zap2.png" alt="">
+    
+
+</div>
+
+<div class="black">
+
+    <h3>Do you want check the code for this project?</p>
+    <button  class="btn btn-large ">Visit Github</button>
+    <br>
+    <br>
+
+    <a href="sample1.html">Previous Project Sample</a>
+    <a href="sample3.html">Next Project Sample</a>
+    
+
+</div>
+
+
+
+<footer class="container-fluid pt-5">
+        
+        <h6 class="text--orange text--thin text-center py-2">&copy; Designed by Maryam Bozorgi - 2018</h6>
+    
+    </footer>
+    
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

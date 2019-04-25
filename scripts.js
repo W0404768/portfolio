@@ -11,9 +11,17 @@ window.addEventListener('load', function () {
                 }
     } );
 
-    document.querySelector("#php").addEventListener('click', function(){
+    document.querySelector("#java").addEventListener('click', function(){
         hideAll();
-        let selects = document.getElementsByClassName("php")
+        let selects = document.getElementsByClassName("java")
+        for(let i =0, il = selects.length;i<il;i++){
+            selects[i].style.display = " block";
+        }
+    } );
+
+    document.querySelector("#go").addEventListener('click', function(){
+        hideAll();
+        let selects = document.getElementsByClassName("go")
         for(let i =0, il = selects.length;i<il;i++){
             selects[i].style.display = " block";
         }
